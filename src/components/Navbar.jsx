@@ -6,22 +6,34 @@ import InterfaceLogo from '../assets/interface-logo.svg';
 const Container = styled.div`
   padding: 0px 30px;
   margin: 20px 0px;
+  max-width: 1200px;
 `
-const Nav = styled.nav`
+const NavMain = styled.nav`
   color: white;
   height: 64px;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  float: left;
+  gap: 30px;
+`
+
+const NavItems = styled.li`
+  list-style: none;
 `
 
 const Navbar = () => {
   return (
     <Container>
-      <Nav>
+      <NavMain>
         <a href="/">
           <img src={InterfaceLogo} alt="interface-logo" height={50}/>
         </a>
-      </Nav>
+        <NavItems>Science</NavItems>
+        <NavItems>Security</NavItems>
+        <NavItems>Technology</NavItems>
+      </NavMain>
     </Container>
   )
 }
