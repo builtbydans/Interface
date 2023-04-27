@@ -1,26 +1,25 @@
 import React from 'react';
-import Reef from '../assets/reef.jpeg';
+import VR from '../assets/vr.jpeg';
 import styled from 'styled-components';
 import Navbar from './Navbar';
-import InterfaceLogo from '../assets/interface-logo.svg';
 
-const MainImg = styled.img`
+const Wrapper = styled.div`
   position: absolute;
+  height: 550px;
   width: 100%;
   top: 0;
-`
-
-const Logo = styled.img`
-  position: relative;
-  z-index: 1;
+  `
+const MainImg = styled.img`
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
 `
 
 const MainStory = () => {
   return (
-    <>
-      <Navbar />
-      <MainImg src={Reef} alt="" />
-    </>
+    <Wrapper>
+      <MainImg src={VR} alt="" />
+    </Wrapper>
   )
 }
 
