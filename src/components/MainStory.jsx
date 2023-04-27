@@ -29,6 +29,7 @@ const MainImg = styled.img`
 
 const MainTitle = styled.h1`
   font-size: 60px;
+  font-family: "Righteous", cursive;
 `
 
 const MainCaption = styled.h2`
