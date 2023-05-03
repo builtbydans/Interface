@@ -49,6 +49,7 @@ const MainStory = () => {
         <MainTextArea>
           <MainTitle>The Doctor of the Future is Virtual</MainTitle>
           <MainCaption>Say goodbye to long lines at A&E</MainCaption>
+          <MainCaption>Test to push to Git</MainCaption>
           <MainAuthor href='/authors'>Danish Shafi</MainAuthor>
         </MainTextArea>
       </Container>
