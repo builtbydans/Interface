@@ -9,7 +9,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-  position: absolute;
+  position: relative;
   height: 550px;
   width: 100%;
   top: 0;
@@ -49,7 +49,6 @@ const MainStory = () => {
         <MainTextArea>
           <MainTitle>The Doctor of the Future is Virtual</MainTitle>
           <MainCaption>Say goodbye to long lines at A&E</MainCaption>
-          <MainCaption>Test to push to Git</MainCaption>
           <MainAuthor href='/authors'>Danish Shafi</MainAuthor>
         </MainTextArea>
       </Container>

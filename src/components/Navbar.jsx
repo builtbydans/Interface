@@ -5,13 +5,13 @@ import InterfaceLogo from '../assets/interface-logo.svg';
 
 const Container = styled.div`
   padding: 0px 30px;
-  margin: 20px 0px;
+  margin: 0px 20px;
   max-width: 1200px;
 `
 const NavMain = styled.nav`
   color: white;
   height: 64px;
-  position: relative;
+  position: absolute;
   z-index: 1;
   display: flex;
   align-items: center;
