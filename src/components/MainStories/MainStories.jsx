@@ -1,31 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import NewsStories from './NewsStories';
-import Reef from '../assets/reef.jpeg';
-
-// Data
-const data = [
-  {
-    category: 'Science',
-    title: 'The Rise and Fall of Private Medical Data',
-    author: 'Joe Bloggs'
-  },
-  {
-    category: 'Technology',
-    title: 'New 5G Scanners confirmed to cause brainwaves',
-    author: 'Joeyyy Bloggerina'
-  },
-  {
-    category: 'Artificial Intelligence',
-    title: 'How AI stole my job',
-    author: 'Not A Robot'
-  },
-  {
-    category: 'Gadgets',
-    title: 'Why a £1000 drone is ideal for you',
-    author: 'DJI Guy'
-  }
-]
+import NewsList from '../NewsList/NewsList.jsx';
+import Reef from '../../assets/reef.jpeg';
+import Data from '../../lib/Data';
 
 // Styled Components
 const Row = styled.div`
@@ -40,13 +17,13 @@ const HeroImage = styled.img`
   width: 100%;
 `
 
-const HeroTitle = styled.h1`
+const HeroTitle = styled.a`
   font-weight: bold;
   font-size: 3.5rem;
-  background-color: black;
-  color: white;
+  color: #7f1ae5;
   position: relative;
   bottom: 100px;
+  cursor: pointer;
 `
 
 const ColLeft = styled.div`
@@ -69,8 +46,8 @@ const MainStories = () => {
         </ColLeft>
 
         <ColRight>
-          {data.map((story) => {
-          return <NewsStories
+          {Data.map((story) => {
+          return <NewsList
                     category={story.category}
                     title={story.title}
                     author={story.author}

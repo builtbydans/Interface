@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import MainStory from '../components/MainStory'
-import MainStories from '../components/MainStories'
+import Navbar from '../components/Navbar/Navbar.jsx'
+import MainStories from '../components/MainStories/MainStories'
 
 const HomePage = () => {
   return (

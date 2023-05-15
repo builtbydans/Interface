@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import InterfaceLogo from '../assets/interface-logo.svg';
+import InterfaceLogo from '../../assets/interface-logo.svg';
 
 // Styled Components
 const NavMain = styled.nav`

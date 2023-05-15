@@ -1,21 +1,7 @@
 import React from 'react'
-import styled from 'styled-components';
+import { Wrapper, Category, Title } from '../../components/NewsList/NewsListStyles.js';
 
-const Wrapper = styled.div`
-  display: flex;
-  width: 400px;
-`
-
-const Category = styled.p`
-  color: green;
-`
-
-const Title = styled.p`
-  font-size: 1.5rem;
-  font-weight: bold;
-`
-
-const NewsStories = ({ category, title, author }) => {
+const NewsList = ({ category, title, author }) => {
   return (
     <Wrapper>
       <div className="row">
@@ -33,4 +19,4 @@ const NewsStories = ({ category, title, author }) => {
   )
 }
 
-export default NewsStories
+export default NewsList
